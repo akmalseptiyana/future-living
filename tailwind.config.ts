@@ -12,11 +12,6 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-montserrat)", ...fontFamily.sans],
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       colors: {
         title: "#4D265A",
         link: "#F0F1F3",
