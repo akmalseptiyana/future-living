@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import { fontFamily } from "tailwindcss/defaultTheme";
+import { fontFamily, screens } from "tailwindcss/defaultTheme";
 
 const config: Config = {
   content: [
@@ -8,6 +8,18 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1.5rem",
+        md: "2.5rem",
+        lg: "5rem",
+      },
+      screens: {
+        ...screens,
+        "2xl": "1440px",
+      },
+    },
     extend: {
       fontFamily: {
         sans: ["var(--font-montserrat)", ...fontFamily.sans],
