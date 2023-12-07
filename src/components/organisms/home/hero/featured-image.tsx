@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { CheckCircle2, Coins, FileCheck, Users } from "lucide-react";
 
-import { FeatureBar } from "./feature-bar";
+import { FeaturedBar } from "@/components/molecules/featured-bar";
 
 export function FeaturedImage() {
   return (
@@ -17,36 +17,40 @@ export function FeaturedImage() {
       </figure>
       <div className="absolute -bottom-16 -left-8 hidden gap-6 xl:flex xl:flex-col">
         <div className="flex flex-row gap-6">
-          <FeatureBar
+          <FeaturedBar
             className="animate-pop"
             title="Terpercaya"
             description="Pengalaman lebih dari 10 tahun+"
+            withIcon
           >
             <CheckCircle2 className="h-11 w-11 stroke-icon" />
-          </FeatureBar>
-          <FeatureBar
+          </FeaturedBar>
+          <FeaturedBar
             className="animation-delay-1000 animate-pop"
             title="Terjangkau"
             description="Menyediakan harga terbaik"
+            withIcon
           >
             <Coins className="h-11 w-11 stroke-icon" />
-          </FeatureBar>
+          </FeaturedBar>
         </div>
         <div className="ml-16 flex flex-row gap-6">
-          <FeatureBar
+          <FeaturedBar
             className="animation-delay-2000 animate-pop "
             title="Professional"
             description="Berpengalaman dan Professional"
+            withIcon
           >
             <FileCheck className="h-11 w-11 stroke-icon" />
-          </FeatureBar>
-          <FeatureBar
+          </FeaturedBar>
+          <FeaturedBar
             className="animation-delay-3000 animate-pop "
             title="Cepat"
             description="Bekerja secara efisien"
+            withIcon
           >
             <Users className="h-11 w-11 stroke-icon" />
-          </FeatureBar>
+          </FeaturedBar>
         </div>
       </div>
     </div>
