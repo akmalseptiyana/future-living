@@ -6,4 +6,14 @@
   .transition-collapse {
     transition: height 350ms ease;
   }
+
+  .animation-delay-1000 {
+    animation-delay: 1000ms;
+  }
+  .animation-delay-2000 {
+    animation-delay: 2000ms;
+  }
+  .animation-delay-3000 {
+    animation-delay: 3000ms;
+  }
 }
