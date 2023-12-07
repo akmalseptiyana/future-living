@@ -12,7 +12,6 @@ const config: Config = {
       center: true,
       padding: {
         DEFAULT: "1.5rem",
-        md: "2.5rem",
         lg: "5rem",
       },
       screens: {
