@@ -60,14 +60,14 @@ const navbarLinks = [
   },
   {
     name: "Tentang Kami",
-    href: "/",
+    href: "/about",
   },
   {
     name: "Properti",
-    href: "/",
+    href: "/property",
   },
   {
     name: "Artikel",
-    href: "/",
+    href: "/article",
   },
 ];
