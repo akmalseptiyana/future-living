@@ -15,10 +15,10 @@ export function MenuLink({ name, href }: MenuLinkProps) {
     <Link
       href={href}
       className={cn(
-        "text-center text-sm leading-6 text-title transition-all delay-150 ease-in-out hover:underline-offset-2 lg:text-base",
+        "text-center text-sm leading-6 text-title transition-all delay-150 ease-in-out lg:text-base",
         href === pathname
-          ? "font-semibold hover:no-underline"
-          : "font-normal hover:underline",
+          ? "font-semibold"
+          : "font-normal hover:underline hover:underline-offset-2",
       )}
     >
       {name}
