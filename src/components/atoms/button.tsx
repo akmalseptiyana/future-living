@@ -10,6 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-title text-white",
+        secondary: "bg-white text-title shadow-md md:rounded-lg",
         outline: "border border-title bg-white text-title",
         ghost: "hover:bg-title hover:text-white",
       },
