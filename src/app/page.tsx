@@ -1,6 +1,8 @@
 import { Navbar } from "@/components/organisms/navbar";
 import { HomeHero } from "@/components/organisms/home/hero";
 import { HomeAbout } from "@/components/organisms/home/about";
+import { HomeProperty } from "@/components/organisms/home/property";
+import { HomeService } from "@/components/organisms/home/service";
 
 export default function Home() {
   return (
@@ -12,6 +14,12 @@ export default function Home() {
         </section>
         <section className="container mt-10 md:mt-20 lg:mt-[7.5rem]">
           <HomeAbout />
+        </section>
+        <section className="container mt-10 md:mt-20 lg:mt-[7.5rem]">
+          <HomeProperty />
+        </section>
+        <section className="container mt-10 md:mt-20 lg:mt-[7.5rem]">
+          <HomeService />
         </section>
       </main>
     </>
