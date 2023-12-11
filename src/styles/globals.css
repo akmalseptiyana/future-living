@@ -17,3 +17,19 @@
     animation-delay: 3000ms;
   }
 }
+
+/* Swiper */
+.swiper-paginations {
+  width: max-content !important;
+}
+
+.swiper-paginations .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+  background: #ede9ef;
+}
+
+.swiper-paginations .swiper-pagination-bullet-active {
+  background: #ad9bb3;
+}
