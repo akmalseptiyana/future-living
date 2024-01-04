@@ -16,6 +16,7 @@ import {
 } from "@/components/molecules/card";
 import { projects } from "@/lib/data";
 import { cn } from "@/utils/classnames";
+import { ArrowLeft, ArrowRight } from "@/components/atoms/icons";
 
 export function HomeProject() {
   const [navigation, setNavigation] = useState({
@@ -48,7 +49,7 @@ export function HomeProject() {
         <Swiper
           ref={slideRef}
           className="mySwiper"
-          pagination={{ clickable: true, el: ".swiper-paginations" }}
+          pagination={{ clickable: true, el: ".swiper-paginations-project" }}
           modules={[Pagination, Navigation]}
           onSlideChange={onSlideChange}
           breakpoints={{
@@ -91,44 +92,25 @@ export function HomeProject() {
       </div>
       <div className="flex flex-row items-center justify-center gap-4 lg:hidden">
         <div className="h-5 w-5">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
+          <ArrowLeft
             className={cn(
               "h-5 w-5 fill-[#AD9BB3] stroke-[#AD9BB3]",
               navigation.isFirst && "hidden",
             )}
             onClick={handlePrev}
-          >
-            <path
-              fill-rule="evenodd"
-              d="M15 10a.75.75 0 01-.75.75H7.612l2.158 1.96a.75.75 0 11-1.04 1.08l-3.5-3.25a.75.75 0 010-1.08l3.5-3.25a.75.75 0 111.04 1.08L7.612 9.25h6.638A.75.75 0 0115 10z"
-              clip-rule="evenodd"
-            />
-          </svg>
+          />
         </div>
 
-        <div className="swiper-paginations"></div>
+        <div className="swiper-paginations-project"></div>
 
         <div className="h-5 w-5">
-          <svg
-            v-if="current < dotHelper.length - 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
+          <ArrowRight
             className={cn(
               "h-5 w-5 fill-[#AD9BB3] stroke-[#AD9BB3]",
               navigation.isLast && "hidden",
             )}
             onClick={handleNext}
-          >
-            <path
-              fill-rule="evenodd"
-              d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z"
-              clip-rule="evenodd"
-            />
-          </svg>
+          />
         </div>
       </div>
     </div>

@@ -19,17 +19,20 @@
 }
 
 /* Swiper */
-.swiper-paginations {
+.swiper-paginations-project,
+.swiper-paginations-testimonial {
   width: max-content !important;
 }
 
-.swiper-paginations .swiper-pagination-bullet {
+.swiper-paginations-project .swiper-pagination-bullet,
+.swiper-paginations-testimonial .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
   opacity: 1;
   background: #ede9ef;
 }
 
-.swiper-paginations .swiper-pagination-bullet-active {
+.swiper-paginations-project .swiper-pagination-bullet-active,
+.swiper-paginations-testimonial .swiper-pagination-bullet-active {
   background: #ad9bb3;
 }

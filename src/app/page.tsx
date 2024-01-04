@@ -3,6 +3,9 @@ import { HomeHero } from "@/components/organisms/home/hero";
 import { HomeAbout } from "@/components/organisms/home/about";
 import { HomeProperty } from "@/components/organisms/home/property";
 import { HomeService } from "@/components/organisms/home/service";
+import { HomeProject } from "@/components/organisms/home/project";
+import { HomeTestimonial } from "@/components/organisms/home/testimonial";
+import { HomeContact } from "@/components/organisms/home/contact";
 
 export default function Home() {
   return (
@@ -20,6 +23,15 @@ export default function Home() {
         </section>
         <section className="container mt-10 md:mt-20 lg:mt-[7.5rem]">
           <HomeService />
+        </section>
+        <section className="container mt-10 md:mt-20 lg:mt-[7.5rem]">
+          <HomeProject />
+        </section>
+        <section className="container mt-10 md:mt-20 lg:mt-[7.5rem]">
+          <HomeTestimonial />
+        </section>
+        <section className="container mt-10 md:mt-20 lg:mt-[7.5rem]">
+          <HomeContact />
         </section>
       </main>
     </>

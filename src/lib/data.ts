@@ -51,3 +51,68 @@ export const services = [
     icon: Construction,
   },
 ];
+
+export const projects = [
+  {
+    id: createNanoID(),
+    title: "Perumahan MoonShine",
+    city: "Surabaya",
+    imageUrl:
+      "https://images.unsplash.com/photo-1628012209120-d9db7abf7eab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80",
+  },
+  {
+    id: createNanoID(),
+    title: "Perumahan RoseShine",
+    city: "Surabaya",
+    imageUrl:
+      "https://images.unsplash.com/photo-1561975023-4cf2c838810c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  },
+  {
+    id: createNanoID(),
+    title: "Perumahan StarShine",
+    city: "Yogyakarta",
+    imageUrl:
+      "https://images.unsplash.com/photo-1557696859-ebd88b12be5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  },
+];
+
+export const testimonials = [
+  {
+    id: createNanoID(),
+    name: "Miguel San Jose",
+    role: "Direktur PT",
+    company: "Home Properties",
+    caption: "“Langkah Awal Demi Mimpi Jadi Kenyataan”",
+    testimony:
+      "Demi mencapai mimpi yang dituju, perlu langkah awal yang pasti. Future Living memiliki segalanya sebagai langkah awal mewujudkan mimpi.",
+    imageProperty:
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    imageCompany: "/images/company1.png",
+    imageProfile: "/images/user1.webp",
+  },
+  {
+    id: createNanoID(),
+    name: "Abi Rozenfort",
+    role: "Direktur PT",
+    company: "Home & Garden",
+    caption: "“Laba Perusahaan Kami Meroket 200%”",
+    testimony:
+      "Ini adalah pelayanan kami, kami melayani dengan sepenuh hati. Anda akan mendapatkan pelayanan terbaik dari kami.",
+    imageProperty:
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=875&q=80",
+    imageCompany: "/images/company2.png",
+    imageProfile: "/images/user4.webp",
+  },
+  {
+    id: createNanoID(),
+    name: "Russel Novel",
+    role: "Direktur PT",
+    company: "Aki-Home",
+    caption: "“Future Living Gambaran Masa Depan”",
+    testimony:
+      "Masa depan bukan hanya sekedar angan-angan, Future Living menyediakan properti dengan teknologi terkini dan selalu ada gebrakan di dalamnya.",
+    imageProperty: "/images/aki-home-testimonial.png",
+    imageCompany: "/images/company3.png",
+    imageProfile: "/images/user3.webp",
+  },
+];
